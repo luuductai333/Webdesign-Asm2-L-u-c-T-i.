@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: rgba(240, 238, 238, 0.5);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#top-header a,
+#header a,
+#navbar li a {
+    text-decoration: none;
+    color:chocolate
+}
+
+#header>a {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+#top-header a:hover,
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(190, 135, 32);
+}
+
+/* Home Page */
+/* banner */
+#banner {
+    margin-top: 20px;
+}
+
+#banner img {
+    max-width: 130%; /* Đảm bảo ảnh không vượt quá chiều rộng của phần tử cha */
+    height: auto; /* Tự động tính toán chiều cao dựa trên tỉ lệ chiều rộng */
+    width: 90%; /* Đặt chiều rộng của ảnh thành 80% của kích thước gốc */
+    display: block; /* Đảm bảo ảnh được căn giữa */
+    margin: 0 auto; /* Căn giữa ảnh */
+ } 
+
+/* Product */
+#home-billiards .billiards-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    flex-wrap: wrap;
+}
+
+.billiards-item {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 10px chocolate; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.billiards-item:hover {
+    transform: translateY(-5px); 
+}
+
+.billiards-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.billiards-item .des {
+    padding: 10px;
+    text-align: center;
+}
+
+.billiards-item .price {
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid #ddd; 
+    border-radius: 0 0 10px 10px; 
+}
+
+.billiards-item .price p {
+    font-size: 15px;
+    font-weight: 700;
+    color: chocolate;
+}
+
+.billiards-item .price .fa-cart-shopping {
+    color: chocolate;
+}
+
+.separator {
+    margin: 20px auto; /* Khoảng cách từ trên xuống và từ dưới lên */
+    width: 200%; /* Chiều rộng của dấu gạch */
+    border: none; /* Xóa đường viền của dấu gạch */
+    border-top: 1px solid chocolate; /* Màu và độ dày của dấu gạch */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Màu nền của footer */
+    padding: 20px 0; /* Khoảng cách từ nội dung đến viền */
+    color: #fff; /* Màu chữ */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Cho phép các phần tử chuyển dòng khi không đủ không gian */
+}
+
+.footer-section {
+    flex: 0 0 48%; /* Chiều rộng mặc định của mỗi phần tử */
+}
+
+.footer-section ul {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Xóa padding mặc định của danh sách */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+.footer-section li {
+    margin-bottom: 5px; /* Khoảng cách giữa các mục danh sách */
+}
+
+.copyright {
+    margin-top: 20px; /* Khoảng cách từ phần footer-content đến phần bản quyền */
+    text-align: center;
+    color: chocolate;
+
+}
+
+/* CSS cho ô tìm kiếm */
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* CSS cho kết quả tìm kiếm */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-result {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #f4f4f4;
+}
+
+#successMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+}
+

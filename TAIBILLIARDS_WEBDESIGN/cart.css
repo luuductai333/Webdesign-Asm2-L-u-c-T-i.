@@ -1,0 +1,147 @@
+/* Thiết lập font chung */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng phần header */
+#header {
+    background-color: #f78f1e; /* Màu cam */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar li a:hover {
+    background-color: #e07600; /* Màu cam nhạt */
+}
+
+/* Định dạng phần checkout */
+#checkout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.checkout-container {
+    width: 45%;
+}
+
+/* Định dạng danh sách sản phẩm đã chọn */
+#selected-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h3 {
+    margin: 0;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+/* Định dạng form thanh toán */
+#payment-form {
+    width: 45%;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#payment-form input,
+#payment-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#payment-form button {
+    background-color: #f78f1e; /* Màu cam */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#payment-form button:hover {
+    background-color: #e07600; /* Màu cam nhạt */
+}
+
+/* Phần footer */
+.container {
+    background-color: #ffd700; /* Màu vàng */
+    color: #333; /* Màu văn bản chính */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Định dạng chính sách và bản quyền */
+.copyright {
+    margin-top: 20px;
+}
+
+/* CSS */
+body {
+    background-image: url('https://probilliardseries.com/wp-content/uploads/2022/02/predator-probilliard-series-512x512-1.png');
+    background-size:100px; 
+    background-position: center; 
+}

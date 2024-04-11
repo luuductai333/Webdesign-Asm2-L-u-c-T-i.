@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Garamond', serif;
+      background: url('https://pbs.twimg.com/media/GG3tH-XXsAAvA2_.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .register {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .register h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color:chocolate;
+      text-transform: uppercase;
+    }
+
+    .register form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .register form h5 {
+      margin-bottom: 10px;
+      color:chocolate;
+      font-size: 18px;
+    }
+
+    .register form input {
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .register form button {
+      padding: 12px;
+      background-color:gold;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register form button:hover {
+      background-color:chocolate;
+    }
+
+    .register .login_registerButton {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .register .register_registerButton:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- from register -->
+  <div class="register">
+    <h1>Register An Account</h1>
+    <form>
+      <h5>Email</h5>
+      <input type="email" class="input-register-username" required />
+      <h5>Password</h5>
+      <input type="password" class="input-register-password" required />
+      <button type="submit" class="register-registerButton">Register</button>
+    </form>
+    <a href="./login.html" class="register-registerButton">Login Account</a>
+  </div>
+</body>
+<script src="register.js"></script>
+</html>

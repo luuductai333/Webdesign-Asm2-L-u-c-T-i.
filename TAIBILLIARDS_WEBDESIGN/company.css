@@ -1,0 +1,63 @@
+/* company.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: goldenrod;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: chocolate;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: #ffa500;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Thêm định dạng cho ảnh */
+#about img {
+    max-width: 100%; /* Ảnh sẽ không vượt quá kích thước của container */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    display: block; /* Đảm bảo ảnh không bị đẩy xuống dòng */
+    margin: 20px auto; /* Canh giữa ảnh và thêm khoảng cách trên và dưới */
+}
+
+footer{
+    text-align: center;
+}
